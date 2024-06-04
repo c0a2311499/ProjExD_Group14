@@ -407,7 +407,7 @@ class EMP(pg.sprite.Sprite):
 class change_Boss():
     """
     １キーを押したときにボス戦警告のポップアップ表示
-    Yesを押したときボス戦開始エフェクト+背景切り替え
+    Yを押したときボス戦開始エフェクト+背景切り替え
     """
     def __init__(self, screen):
         self.screen = screen
