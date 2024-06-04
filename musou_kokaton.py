@@ -708,7 +708,7 @@ def main():
             return
         for beam in pg.sprite.groupcollide(beams, bosses, True, False).keys(): #ボスとビームの衝突判定、爆発エフェクト
             exps.add(Explosion(beam, 50))
-            bosses.update(10, score)        
+            bosses.update(power.value, score)        
         hp.update(screen)
         bird.update(key_lst, screen)
         beams.update()
