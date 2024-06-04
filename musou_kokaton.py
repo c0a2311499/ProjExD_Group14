@@ -672,6 +672,12 @@ def main():
                 # time.sleep(2)
                 # time.sleep(1)
                 if hp.hp <= 0: #HPがなくなったらゲームオーバー
+                    fonto = pg.font.Font(None, 80)
+                    screen.fill((50, 0, 0))
+                    txt = fonto.render("GameOver", True, (255, 0, 0))
+                    screen.blit(txt, [WIDTH/2 -150, HEIGHT/2])
+                    pg.display.update()
+                    time.sleep(4)
                     return
         
         # for ---------------------------------- 
